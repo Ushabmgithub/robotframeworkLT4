@@ -1,5 +1,6 @@
 *** Settings ***
 Library     SeleniumLibrary
+Library    Collections
 
 
 *** Test Cases ***
@@ -10,4 +11,7 @@ TC1
    Go To    url=https://netbanking.hdfcbank.com/netbanking/IpinResetUsingOTP.htm
    Click Element    Xpath=//img[@alt='Go']
    ${alert_text}     Handle Alert     action=ACCEPT
-   Log To Console    ${alert_text}
+   Log To Console    ${aler_text}
+   
+
+   

@@ -12,5 +12,13 @@ TC1
    Click Element    Xpath=//*[@id="edit-field-business-focus-inst-und-970"]
    #Click Element     Xpath=//*[@id="edit-submitted-contact-person-for-nasscom-email-id-cp"]
    Click Element    link=Calculate Membership Fee
-   ${alert_text}     Handle Alert     action=ACCEPT
-   Log To Console    ${alert_text}
+   ${text}     Handle Alert  action=LEAVE
+   Log To Console    ${text}
+
+   Alert Should Be Present     Please enter amount in digit and greater than zero.      action=ACCEPT
+
+   Choose File    id=edit-field-memorandum-article-of-asso-und-0-upload    file_path=C:\\Users\\Harish banakar\\PycharmProjects\\pythonProject\\LT4\\robotframework\\USHA PRARAMBH CERTIFICATE.pdf
+
+
+   Sleep    25s
+   Close Browser
