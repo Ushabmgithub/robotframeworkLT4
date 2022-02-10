@@ -11,5 +11,15 @@ TC1 Valid Login
     Input Text    id=clearPass  pass
     Select From List By Label    name=languageChoice      English (Indian)
     Click Element    Xpath=//button[@type='submit']
-    ${tittle}   Get Title
-    Log To Console    ${tittle}
+    
+    Mouse Over    Xpath=//*[@id="username"]/span[1]
+    
+    Click Element   Xpath=//*[@id="userdropdown"]/li[4]
+    Close Browser
+
+    #${tittle}   Get Title
+    #Log To Console    ${tittle}
+    
+    
+
+    
