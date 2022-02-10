@@ -16,8 +16,4 @@ TC1 Valid Login
     Close Browser
 
 
-#click myinfo
-#click  emer
-#clicj add
-#enter name ,retaltionshiop home telephone
-#click save
+

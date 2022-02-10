@@ -18,3 +18,5 @@ TC1 Valid Login
     Input Text    id=address    Mysore
     Input Text    id=websiteUrl    www.ltts.com
     Input Text    id=empCount    21
+    Click Element    Xpath=//*[@id="root"]/div/div/div[3]/div[3]/form/div/div[2]/input[2]
+    Close Browser
