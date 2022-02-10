@@ -1,124 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.3 (Python 3.7.0 on win32)" generated="20220210 10:14:24.211" rpa="false" schemaversion="2">
-<suite id="s1" name="Demo2 Suite" source="C:\Users\Harish banakar\PycharmProjects\pythonProject\LT4\robotframework\robot_suite\demo2_suite.robot">
+<robot generator="Robot 4.1.3 (Python 3.7.0 on win32)" generated="20220210 11:08:56.656" rpa="false" schemaversion="2">
+<suite id="s1" name="Demo3 Suite" source="C:\Users\Harish banakar\PycharmProjects\pythonProject\LT4\robotframework\robot_suite\demo3_suite.robot">
 <test id="s1-t1" name="TC1">
 <kw name="Log To Console" library="BuiltIn">
-<arg>${EXECDIR}</arg>
+<arg>${PERSONAL_DETAIL}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20220210 10:14:24.267" endtime="20220210 10:14:24.268"/>
+<status status="PASS" starttime="20220210 11:08:56.706" endtime="20220210 11:08:56.708"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
-<arg>C:\\Users\\Harish banakar\\PycharmProjects\\pythonProject\\LT4\\robotframework\\robot_suite</arg>
+<arg>${PERSONAL_DETAIL}[firstname]</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20220210 10:14:24.268" endtime="20220210 10:14:24.269"/>
+<status status="PASS" starttime="20220210 11:08:56.709" endtime="20220210 11:08:56.709"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
-<arg>${EXECDIR}${/}driver${/}chromedriver.exe</arg>
+<arg>${PERSONAL_DETAIL}[lastname]</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20220210 10:14:24.270" endtime="20220210 10:14:24.272"/>
+<status status="PASS" starttime="20220210 11:08:56.710" endtime="20220210 11:08:56.711"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
-<arg>${SUITE_NAME}</arg>
+<arg>${PERSONAL_DETAIL}[mobile]</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20220210 10:14:24.272" endtime="20220210 10:14:24.273"/>
+<status status="PASS" starttime="20220210 11:08:56.711" endtime="20220210 11:08:56.712"/>
 </kw>
-<kw name="Log To Console" library="BuiltIn">
-<arg>${TEST_NAME}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20220210 10:14:24.274" endtime="20220210 10:14:24.275"/>
-</kw>
-<kw name="Log To Console" library="BuiltIn">
-<arg>${TEMPDIR}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20220210 10:14:24.276" endtime="20220210 10:14:24.277"/>
-</kw>
-<kw name="Log To Console" library="BuiltIn">
-<arg>${name}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20220210 10:14:24.278" endtime="20220210 10:14:24.279"/>
-</kw>
-<kw name="Log To Console" library="BuiltIn">
-<arg>${COLORS}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20220210 10:14:24.279" endtime="20220210 10:14:24.280"/>
-</kw>
-<kw name="Log To Console" library="BuiltIn">
-<arg>${COLORS}[0]</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20220210 10:14:24.281" endtime="20220210 10:14:24.281"/>
-</kw>
-<status status="PASS" starttime="20220210 10:14:24.266" endtime="20220210 10:14:24.282"/>
+<status status="PASS" starttime="20220210 11:08:56.705" endtime="20220210 11:08:56.713"/>
 </test>
-<test id="s1-t2" name=" TC2">
-<kw name="Get Length" library="BuiltIn">
-<var>${count}</var>
-<arg>${COLORS}</arg>
-<doc>Returns and logs the length of the given item as an integer.</doc>
-<msg timestamp="20220210 10:14:24.286" level="INFO">Length is 3</msg>
-<msg timestamp="20220210 10:14:24.287" level="INFO">${count} = 3</msg>
-<status status="PASS" starttime="20220210 10:14:24.285" endtime="20220210 10:14:24.287"/>
-</kw>
-<kw name="Log To Console" library="BuiltIn">
-<arg>${count}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20220210 10:14:24.289" endtime="20220210 10:14:24.290"/>
-</kw>
-<for flavor="IN">
-<var>${i}</var>
-<value>RANGE</value>
-<value>0</value>
-<value>${count}</value>
-<value>1</value>
-<iter>
-<var name="${i}">RANGE</var>
-<kw name="Log To Console" library="BuiltIn">
-<arg>${COLORS}${i}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20220210 10:14:24.291" endtime="20220210 10:14:24.292"/>
-</kw>
-<status status="PASS" starttime="20220210 10:14:24.291" endtime="20220210 10:14:24.292"/>
-</iter>
-<iter>
-<var name="${i}">0</var>
-<kw name="Log To Console" library="BuiltIn">
-<arg>${COLORS}${i}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20220210 10:14:24.293" endtime="20220210 10:14:24.294"/>
-</kw>
-<status status="PASS" starttime="20220210 10:14:24.293" endtime="20220210 10:14:24.294"/>
-</iter>
-<iter>
-<var name="${i}">3</var>
-<kw name="Log To Console" library="BuiltIn">
-<arg>${COLORS}${i}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20220210 10:14:24.294" endtime="20220210 10:14:24.295"/>
-</kw>
-<status status="PASS" starttime="20220210 10:14:24.294" endtime="20220210 10:14:24.295"/>
-</iter>
-<iter>
-<var name="${i}">1</var>
-<kw name="Log To Console" library="BuiltIn">
-<arg>${COLORS}${i}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20220210 10:14:24.296" endtime="20220210 10:14:24.296"/>
-</kw>
-<status status="PASS" starttime="20220210 10:14:24.295" endtime="20220210 10:14:24.297"/>
-</iter>
-<status status="PASS" starttime="20220210 10:14:24.291" endtime="20220210 10:14:24.297"/>
-</for>
-<status status="PASS" starttime="20220210 10:14:24.284" endtime="20220210 10:14:24.297"/>
-</test>
-<status status="PASS" starttime="20220210 10:14:24.215" endtime="20220210 10:14:24.299"/>
+<status status="PASS" starttime="20220210 11:08:56.660" endtime="20220210 11:08:56.715"/>
 </suite>
 <statistics>
 <total>
-<stat pass="2" fail="0" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="2" fail="0" skip="0" id="s1" name="Demo2 Suite">Demo2 Suite</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Demo3 Suite">Demo3 Suite</stat>
 </suite>
 </statistics>
 <errors>
