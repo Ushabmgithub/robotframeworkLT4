@@ -9,7 +9,7 @@ TC1
    Go To    url=http://google.com/
    Set Window Size    600    8000
    ${width} ${hieght}  Get Window Size
-   Log To Console    ${width
+   Log To Console    ${width}
    ${linkcount}     Get Element Count    tag=a
    Log To Console  ${linkcount}
 
